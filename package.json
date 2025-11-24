@@ -1,0 +1,44 @@
+{
+  "name": "@xhark7/xtoast",
+  "version": "4.0.2",
+  "description": "A biblioteca de toast notifications mais completa e divertida da web. Rich media, progresso, morphing, carousel, celebração e easter eggs.",
+  "main": "dist/xtoast.min.js",
+  "module": "src/xtoast.js",
+  "unpkg": "dist/xtoast.min.js",
+  "jsdelivr": "dist/xtoast.min.js",
+  "types": "src/xtoast.d.ts",
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "keywords": [
+    "toast",
+    "notification",
+    "ui",
+    "alert",
+    "rich-toast",
+    "progress",
+    "morphing",
+    "carousel",
+    "celebration",
+    "web-notification",
+    "ux"
+  ],
+  "author": "XharkDev #VnDeveloperss",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VnDeveloperss/xtoast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VnDeveloperss/xtoast/issues"
+  },
+  "homepage": "https://github.com/VnDeveloperss/xtoast#readme",
+  "scripts": {
+    "build": "terser src/xtoast.js -c -m -o dist/xtoast.min.js --comments \"/XToast/\"",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "terser": "^5.44.1"
+  }
+}
